@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Calculator</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- CSS File -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Stock Profile & Loss Calculator</h1>
+    <main>
+        <label for="initial-price">Initial price:
+        <input id="initial-price" type="number" placeholder="Enter Initial price here" step="any" min=0 oninput="validity.valid||(value='');" />
+        </label>
+
+        <label for="stocks-quantity"class="desc">Quantity of stocks:
+        <input id="stocks-quantity" type="number" placeholder="Enter the Number of stocks bought" min=0 oninput="validity.valid||(value='');"  />
+        </label>
+        
+        <label for="current-price" class="desc">Current price:
+        <input id="current-price" type="number" placeholder="Enter the Current Price of the stocks" step="any" min=0 oninput="validity.valid||(value='');" />
+        </label>
+        
+        <button id="submit-btn">Tell me!</button>
+        <div id="output"></div>
+    
+    </main>
+
+<!-- JS File -->
+<script src="app.js"></script>
+
+</body>
+</html>
